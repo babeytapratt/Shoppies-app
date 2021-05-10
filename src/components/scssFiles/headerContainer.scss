@@ -1,0 +1,13 @@
+
+@import '../../sassStyles/mixins';
+@import '../../sassStyles/variables';
+
+header {
+    margin: 20px 0 34px;
+
+    @include customMinBreakPoint(1024) {
+        margin: 40px 0 64px;
+    }
+
+
+}

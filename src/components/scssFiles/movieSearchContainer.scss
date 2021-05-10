@@ -1,0 +1,14 @@
+@import '../../../sassStyles/variables';
+@import '../../../sassStyles/mixins';
+
+.search-container {
+    top: -80px;
+}
+
+.results__search-value {
+    margin: 8px 0 15px;
+
+    span {
+        color: $primaryDark1Color;
+    }
+}

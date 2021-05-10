@@ -1,0 +1,39 @@
+@import '../../sassStyles/mixins';
+@import '../../sassStyles/variables';
+
+.winnerWrapper {
+    display: flex;
+    background-color: $primaryDark1Color;
+
+    @include customMinBreakPoint(400) {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+.ww__inner-container {
+    background-color: $primaryDark1Color;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    margin: 20px auto;
+
+
+
+    @include customMinBreakPoint(400) {
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+
+    -webkit-animation: winner-box-shadow-fade 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+        animation: winner-box-shadow-fade 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+
+
+}

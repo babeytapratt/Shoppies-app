@@ -1,0 +1,28 @@
+@import '../../sassStyles/variables';
+@import '../../sassStyles/animations';
+@import '../../sassStyles/mixins';
+
+.intro {
+
+    h1 {
+        opacity: 0;
+        color: $secondaryColor;
+        -webkit-animation: fade-up 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+                animation: fade-up 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+    }
+
+    span {
+        opacity: 0;
+        color: $primaryDark1Color;
+        display: block;
+        -webkit-animation: fade-up 1.2s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0.1s both;
+        animation: fade-up 1.2s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0.1s both;
+    }
+
+    p {
+        color: $textColor;
+        opacity: 0;
+        -webkit-animation: fade-up 0.9s cubic-bezier(0.165, 0.840, 0.440, 1.000) 1s both;
+        animation: fade-up 0.9s cubic-bezier(0.165, 0.840, 0.440, 1.000) 1s both;
+    }
+}
