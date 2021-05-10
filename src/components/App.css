@@ -1,96 +1,64 @@
-.App {
+body {
+    margin: 20px;
+    background-color: #f9f9f9;
+    /*font-family: Futura, Helvetica, Arial, sans-serif;*/
+    /*font-weight: 300;*/
+}
+
+.ui.header h1, .ui.header h3 {
+    font-weight: 300;
+}
+
+#main-header {
+    /*background-color: #efece3;*/
+    color: #b7a064;
+}
+
+#divider {
+    background-color: #efece3;
+    height: 40px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     text-align: center;
 }
 
-.App-header {
-    background-color: #0d25f8;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: whitesmoke;
-    padding: 20px;
-    cursor: pointer;
+#divider span {
+    color: black
 }
 
-.spinner {
-    height: 80px;
-    margin: auto;
+#searchbar {
+    margin-bottom: 20px;
 }
 
-.App-intro {
-    font-size: large;
+#movie-search-list-div .ui.header, #nomination-list-div .ui.header, #prev-search-list-div .ui.header {
+    color: #b7a261;
+    height: 40px;
+    /*bottom: 500px;*/
 }
 
-* {
-    box-sizing: border-box;
+#nomination-header select {
+    font-size: 14px;
+    padding: 0;
+    /*height: 30px;*/
+    /*top: 7px;*/
+    /*padding-bottom: 0;*/
+    /*border-bottom: 0;*/
+    /*bottom: 10px;*/
+    /*height: 100%;*/
+    /*height: 30px;*/
+    /*border-bottom: 0;*/
+    /*outline: 1px solid black;*/
 }
 
-.movies {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+#nomination-header select, #nomination-header button, #clear-hist-btn {
+    /*cursor: pointer;*/
+    margin: 0 5px;
+    /*border: 0;*/
+    /*padding-bottom: 0;*/
+    /*outline: 1px solid rgba(34,36,37,.15);*/
 }
 
-.nominate-movies {
-    text-align: center;
-}
-
-.nominate-movies button {
-    font-size: 16px;
-    padding: 8 px;
-    margin: 0 10px 30px 10px;
-}
-
-.movie {
-    padding: 5px 25px 10px 25px;
-    max-width: 25%;
-}
-
-.search {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-input[type='submit'] {
+#nomination-header button, #clear-hist-btn {
     padding: 5px;
-    background-color: transparent;
-    color: black;
-    width: 80px;
-    margin-left: 5px;
-    cursor: pointer;
-}
-
-input[type='submit']:hover {
-    background-color: #282c34;
-    color: antiquewhite;
-}
-
-.search > input[type='text'] {
-    width: 40%;
-    min-width: 170px;
-}
-
-@media screen and (min-width: 694px) and (max-width: 915px) {
-    .movie {
-        max-width: 33%;
-    }
-}
-
-@media screen and (min-width: 652px) and (max-width: 693px) {
-    .movie {
-        max-width: 50%;
-    }
-}
-
-@media screen and (max-width: 651px) {
-    .movie {
-        max-width: 100%;
-        margin: auto;
-    }
+    font-size: 14px;
 }
